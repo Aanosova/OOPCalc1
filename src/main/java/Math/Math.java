@@ -30,18 +30,6 @@ public class Math {
             return a / b;
         }
 
-  /**  public double Calc (int a, int b, String oper) {
-        if (oper.equals("+")) {
-            return this.sum(a, b);
-        } else if (oper.equals("-")) {
-            return this.minus(a, b);
-        } else if (oper.equals("*")) {
-            return this.multiply(a, b);
-        } else if (oper.equals("/")); {
-           return this.division(a,b);
-        }
-        }
-*/
     public double calculate(double a, double b, String oper) {
         if (oper.equals("+")) {
             return this.sum(a, b);
@@ -57,4 +45,3 @@ public class Math {
         }
     }
 }
-
