@@ -1,19 +1,6 @@
 package Math;
 
 public class Math {
-    private double sum (int a, int b) {
-        return a + b;
-    }
-    private double minus (int a, int b) {
-        return a - b;
-    }
-
-    private double multiply (int a, int b) {
-        return a * b;
-    }
-    private double division (int a, int b) {
-        return a / b;
-    }
     private double sum (double a, double b) {
         return a + b;
     }
@@ -27,8 +14,11 @@ public class Math {
     }
 
     private double division (double a, double b) {
-            return a / b;
+        if (b==0){
+            throw new ArithmeticException();
         }
+        return a / b;
+    }
 
     public double calculate(double a, double b, String oper) {
         if (oper.equals("+")) {
