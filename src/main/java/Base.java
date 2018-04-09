@@ -21,8 +21,8 @@ try {
 
     System.out.println(calc.calculate(a, b, oper));
 }
-catch (ArithmeticException e) {
-    System.out.println("Нельзя делить на ноль: " + e);
+catch (ArithmeticException a) {
+    System.out.println("Нельзя делить на ноль: " + a);
 }
     }
 }
